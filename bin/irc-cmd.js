@@ -4,7 +4,7 @@ var cmd = require('commander');
 var irccmd = require('irc-cmd');
 
 
-cmd.version('0.1.4')
+cmd.version(irccmd.version)
     .option('-s --server [server]')
     .option('-c --channel [channel]')
     .option('-n --nickname [nick]')

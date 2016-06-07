@@ -1,8 +1,10 @@
 
-all: bump publish
+all: commit publish
 
-bump:
-	npm version patch
+commit:
+	git add .
+	git commit -m '$(MESSAGE)'
+	git push -u origin master
 
 publish:
 	npm publish .

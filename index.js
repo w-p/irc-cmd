@@ -3,7 +3,7 @@
 var irc = require('irc');
 var chalk = require('chalk');
 var EventEmitter = require('events').EventEmitter;
-
+var package_json = require('./package.json');
 
 var irccmd = module.exports = {};
 
@@ -21,6 +21,8 @@ function log (category, subject, message) {
 }
 
 (function () {
+
+    this.version = package_json.version;
 
     this.Client = function (server_name, channel_name, nickname, password) {
         var self = this;
