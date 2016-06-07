@@ -1,7 +1,7 @@
 #! /usr/bin/env node
 
 var cmd = require('commander');
-var irccmd = require('..');
+var irccmd = require('irc-cmd');
 
 
 cmd.version('0.1.4')
