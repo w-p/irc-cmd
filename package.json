@@ -1,0 +1,24 @@
+{
+  "name": "irc-cmd",
+  "version": "0.1.3",
+  "description": "a command line tool for irc",
+  "homepage": "https://github.com/w-p/irc-cmd",
+  "keywords": [
+    "irc"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/w-p/irc-cmd"
+  },
+  "main": "index.js",
+  "bin": {
+    "irc-cmd": "./bin/irc-cmd.js"
+  },
+  "author": "William Palmer",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "1.1.3",
+    "commander": "2.9.0",
+    "irc": "0.5.0"
+  }
+}
